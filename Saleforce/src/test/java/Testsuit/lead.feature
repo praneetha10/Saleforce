@@ -3,7 +3,6 @@ Feature: Create new lead
 
 @Createlead
 Scenario: Check the new lead button
-Given user should close banner
 Given user is on salesforce dashboard page
 When click lead object and click New
 Then user is on new lead form page

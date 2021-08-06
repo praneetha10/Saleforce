@@ -67,6 +67,10 @@ public class Base
 			String[] s=new String[] {"enable-automation"};
 			co.setExperimentalOption("excludeSwitches",s);
 			co.addArguments("--disable-notifications");
+			Map<String, Object> prefs = new HashMap<String, Object>(); 
+			prefs.put("credentials_enable_service", false);
+			prefs.put("profile.password_manager_enabled", false); 
+			co.setExperimentalOption("prefs", prefs);
 			WebDriverManager.chromedriver().setup();
 			 driver=new ChromeDriver(co);
 		}

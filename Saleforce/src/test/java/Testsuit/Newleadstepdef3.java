@@ -13,11 +13,6 @@ public class Newleadstepdef3
 	public lead le=new lead();
 	public Siginp sp=new Siginp();
 	public newlead nl=new newlead();
-	@Given("user should close banner")
-	public void closeBanner()
-	{
-		le.closeBanner();
-	}
 	@Given("^user is on NewLead$")
     public void user_is_on_newlead() throws Exception
 	{

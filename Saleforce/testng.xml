@@ -6,10 +6,9 @@
       <class name="base.Base"></class>
       <class name="Testsuit.LoginTest"></class>
       <class name="Testsuit.leadTest"></class>
-      <class name="Testsuit.webtoleadtest"></class>	 
       <class name="Testsuit.importest"></class>
       <class name="Testsuit.dropdowntest"></class>
       <class name="Testsuit.webtoleadformtest"></class>
-  </classes>
+   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

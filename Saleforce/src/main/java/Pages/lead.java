@@ -15,36 +15,24 @@ import elements.Login;
 
 public class lead extends Base
 {
-	public void closeBanner()
+	
+	public lead()
 	{
 		PageFactory.initElements(driver,Leadeles.class);
-		try
-		{
-			Leadeles.closebanner.click();
-			exttest=report.createTest("close banner");
-			exttest.log(Status.PASS, "close banner");
-		}
-		catch(NoSuchElementException ex)
-		{
-			exttest=report.createTest("no banner");
-			exttest.log(Status.FAIL,ex.getMessage());
-		}
-		
 	}
 	public void click_Lead() throws Exception
 	{
-		Thread.sleep(5000);
 		try
 		{
-			try{Screen s=new Screen();
-			s.click("\\src\\test\\resources\\Capture1.PNG");}
-			catch(Exception ex) {}
 			JavascriptExecutor js=(JavascriptExecutor)driver;
 			js.executeScript("arguments[0].click();",Leadeles.lead);
+			exttest=report.createTest("click lead");
+			exttest.log(Status.PASS, "click lead");
 		}
 		catch (Exception ex)
 		{
-			ex.getMessage();
+			exttest=report.createTest("no banner");
+			exttest.log(Status.FAIL,ex.getMessage());
 		}
 	}
 	public void click_New() throws Exception

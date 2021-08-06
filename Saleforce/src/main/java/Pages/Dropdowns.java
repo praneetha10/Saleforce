@@ -36,7 +36,10 @@ public class Dropdowns extends Base
 		}
 		JavascriptExecutor js7=(JavascriptExecutor)driver;
 		js7.executeScript("arguments[0].click();",dd);
+		exttest=report.createTest("Dropdown");
+		exttest.log(Status.PASS, "Dropdown industry actual values");
 		return actual;
+		
 	}
 	
 	public ArrayList<String> validateIndustryExpected()
@@ -62,11 +65,14 @@ public class Dropdowns extends Base
 					JavascriptExecutor js7=(JavascriptExecutor)driver;
 					js7.executeScript("arguments[0].click();",item);
 				}
+				exttest=report.createTest("Dropdown");
+				exttest.log(Status.PASS, "Dropdown Expected values");
 				
 			}
 			catch(Exception ex)
 			{
-				System.out.println(ex.getMessage());
+				exttest=report.createTest("Dropdown");
+				exttest.log(Status.FAIL, "Dropdown Expected values");
 			}
 		
 		}
@@ -86,6 +92,8 @@ public class Dropdowns extends Base
 		}
 		JavascriptExecutor js5=(JavascriptExecutor)driver;
 		js5.executeScript("arguments[0].click();",e1);
+		exttest=report.createTest("Dropdown");
+		exttest.log(Status.PASS, "Dropdown actual values");
 		return li;
 	}
 	
