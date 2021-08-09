@@ -56,7 +56,8 @@ public class importdata extends Base
 	{
 		Robot r=new Robot();
 		Thread.sleep(5000);
-		String fp="C:\\Users\\prane\\git\\salesforce\\Saleforce\\src\\test\\resources\\Leaddata";
+		/*String fp="C:\\Users\\prane\\git\\salesforce\\Saleforce\\src\\test\\resources\\Leaddata.csv";*/
+		String fp=System.getProperty("user.dir")+"\\src\\test\\resources\\Leaddata.csv";
 		//take text 
 		StringSelection ss=new StringSelection(fp); 
 		//copy to clipboard
