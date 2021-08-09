@@ -37,7 +37,7 @@ public class lead extends Base
 	}
 	public void click_New() throws Exception
 	{
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		wait.until(ExpectedConditions.elementToBeClickable(Leadeles.New)).click();
 		
 	}
