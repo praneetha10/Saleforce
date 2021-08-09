@@ -102,5 +102,8 @@ public class importdata extends Base
 		importdataele.clickok.click();
 		driver.switchTo().defaultContent();
 		
+		
+		
+		
 	}
 }
