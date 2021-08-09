@@ -17,6 +17,9 @@ public class Siginp extends Base
 		PageFactory.initElements(driver,Login.class);
 		driver.get(p.getProperty("url"));
 		driver.manage().window().maximize();
+		
+		
+		
 	}
 	public void sigIn() throws Exception
 	{
