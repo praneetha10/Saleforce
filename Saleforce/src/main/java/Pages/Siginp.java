@@ -23,6 +23,9 @@ public class Siginp extends Base
 		Login.userid.sendKeys(p.getProperty("username"));
 		Login.pwd.sendKeys(p.getProperty("password"));
 		Login.login.click();
+		Thread.sleep(1000);
+		
+		
 		exttest=report.createTest("Homepage");//create title
 		exttest.log(Status.PASS, "Login passed");
 		takeScreenShot("Loginfunction.png");
