@@ -102,6 +102,9 @@ public class Webtoleadpage extends Base
 			driver.switchTo().frame(0);
 			Thread.sleep(10000);
 			Webtoleadelem.enablelead.isSelected();
+			
+			
+			
 			exttest=report.createTest("Selected Web-to-Lead  is not selected");
 			exttest.log(Status.PASS, "Selected Web-To-Lead");
 			return true;
